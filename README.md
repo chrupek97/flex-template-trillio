@@ -18,15 +18,18 @@ To run this project, open index.html on your browser
 
 ## Responsive Layout
 * Main device
+
 ![Header](design-images/main-device.png)
 
 * Tablet
+
 ![Header](design-images/tablet.png)
 
 * iPad
+
 ![Header](design-images/iPad.png)
 
 * iPhone
-![Header](design-images/iPhone.png)
 
+![Header](design-images/iPhone.png)
 
