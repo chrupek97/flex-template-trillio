@@ -12,8 +12,8 @@ html {
 
 body {
   font-family: "Open Sans", sans-serif;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#ba265d), to(#ba265d));
-  background-image: linear-gradient(to right bottom, #ba265d, #ba265d);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#eb2f64), to(#ba265d));
+  background-image: linear-gradient(to right bottom, #eb2f64, #ba265d);
 }
 
 .logo {
@@ -186,7 +186,7 @@ body {
 }
 
 .side-nav__item:active::before {
-  background-color: #ba265d;
+  background-color: #eb2f64;
 }
 
 .side-nav__link:link, .side-nav__link:visited {
@@ -514,6 +514,66 @@ body {
   color: #f4f2f2;
   font-family: sans-serif;
   z-index: 1;
+}
+
+.cta {
+  padding: 3.5rem 0;
+  text-align: center;
+}
+
+.cta__book-now {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+}
+
+.btn {
+  font-size: 1.5rem;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 100px;
+  font-weight: 300;
+  background-image: -webkit-gradient(linear, left top, right top, from(#eb2f64), to(#ba265d));
+  background-image: linear-gradient(to right, #eb2f64, #ba265d);
+  color: white;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.btn__visible {
+  display: inline-block;
+  padding: 2rem 7.5rem;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.btn__invisible {
+  display: inline-block;
+  position: absolute;
+  padding: 2rem 0;
+  left: 0;
+  top: -100%;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.btn:hover .btn__visible {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+.btn:hover .btn__invisible {
+  top: 0;
+}
+
+.btn:focus {
+  outline: none;
+  -webkit-animation: pulsate 1s infinite;
+          animation: pulsate 1s infinite;
 }
 
 .container {
